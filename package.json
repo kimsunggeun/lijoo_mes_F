@@ -1,0 +1,108 @@
+{
+  "name": "WEBMES",
+  "version": "1.0.0",
+  "private": true,
+  "description": "## Project setup ``` npm install ```",
+  "author": "",
+  "scripts": {
+    "serve": "npx --max-old-space-size=4096 vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
+  },
+  "main": "babel.config.js",
+  "dependencies": {
+    "@vue/cli": "^4.5.15",
+    "autoprefixer": "^9.8.6",
+    "axios": "^0.19.2",
+    "core-js": "^3.6.4",
+    "dayjs": "^1.8.29",
+    "devextreme": "^22.1.6",
+    "devextreme-vue": "^22.1.6",
+    "draggable-vue-directive": "^2.1.0",
+    "echarts": "^5.0.2",
+    "echarts-gl": "^2.0.8",
+    "echarts-liquidfill": "^3.0.0",
+    "exceljs": "^4.3.0",
+    "file-saver": "^2.0.5",
+    "init": "^0.1.2",
+    "js-cookie": "^2.2.1",
+    "jspdf": "^2.3.1",
+    "parse5": "^2.1.0",
+    "postcss": "^7.0.35",
+    "screenfull": "^5.0.2",
+    "splitpanes": "^2.2.1",
+    "svg-tags": "^1.0.0",
+    "vue": "^2.6.11",
+    "vue-code-highlight": "^0.7.8",
+    "vue-color": "^2.8.1",
+    "vue-daum-postcode": "^0.9.0",
+    "vue-echarts": "^6.0.0-alpha.4",
+    "vue-horizontal-list": "^1.3.0",
+    "vue-i18n": "^8.17.7",
+    "vue-json-editor": "^1.4.3",
+    "vue-pdf": "^4.2.0",
+    "vue-pdf-app": "^1.0.2",
+    "vue-router": "^3.1.6",
+    "vue-scroll": "^2.1.13",
+    "vue-swatches": "^2.1.1",
+    "vue-template-validator": "^1.1.5",
+    "vue-uuid": "^2.0.2",
+    "vue2-editor": "^2.10.2",
+    "vuedraggable": "^2.24.3",
+    "vuetify": "^2.5.10",
+    "vuex": "^3.3.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@mdi/font": "^6.4.95",
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "@vue/composition-api": "^1.0.0-rc.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^3.11.1",
+    "less-loader": "^6.1.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.2",
+    "svg-sprite-loader": "^5.0.0",
+    "vue-cli-plugin-i18n": "~1.0.1",
+    "vue-svg-loader": "^0.16.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "[Debug] Vue.js: chrome",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}/src",
+      "breakOnLoad": true,
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      }
+    }
+  ],
+  "license": "ISC"
+}
